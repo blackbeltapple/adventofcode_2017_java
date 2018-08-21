@@ -20,7 +20,7 @@ public class Captcha {
 
         List<Integer> intList = Arrays.stream(input.split(""))
                 .map(Integer::valueOf)
-                .filter(i -> i>1)
+//                .filter(i -> i>1)
                 .collect(Collectors.toList());
 
         return intList;
@@ -31,6 +31,16 @@ public class Captcha {
         Integer answer =  Arrays.stream(input.split(""))
                 .map(Integer::valueOf)
                 .reduce(0, Integer::sum);
+
+        return answer;
+    }
+
+    public List<Integer> filterArray(String input) {
+
+        List<Integer>  answer =  Arrays.stream(input.split(""))
+                .map(Integer::valueOf)
+                .filter(i -> i>1)
+                .collect(Collectors.toList());
 
         return answer;
     }
