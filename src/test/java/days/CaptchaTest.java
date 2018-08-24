@@ -1,5 +1,6 @@
-package days.day1;
+package days;
 
+import days.day1.Captcha;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -19,6 +20,6 @@ public class CaptchaTest {
     }
 
 
-
+    // The answers for day1 for my input are 1141 and 950
 
 }

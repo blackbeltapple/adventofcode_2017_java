@@ -29,7 +29,6 @@ public class Captcha {
         List<Integer> filtered = new ArrayList<>();
 
         int offset = index == 0 ? intList.size()/2 : 1;
-
         for (int i = 0; i < intList.size(); i++) {
             int nextInd = (i + offset) > (intList.size() - 1) ?
                     (i + offset) - intList.size() : i + offset;
